@@ -1,0 +1,28 @@
+<!doctype html> 
+<html>
+<head>
+	<title></title>
+	<style type="text/css" media="screen">
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 97vh;
+	    font-family: monospace;
+        }
+	</style>
+</head>
+<body>
+    <a href="mailto:domain@prado.se">domain@prado.se</a>
+
+    <script>
+        var a = document.querySelector('a');
+        a.href = a.href + 
+            '?subject=' + 
+            encodeURIComponent('I\'m interested in purchasing ' + 
+            location.toString().split('?')[1] + 
+            ".\n\nI promise I won't lowball."
+        );
+    </script>
+</body>
+</html>
